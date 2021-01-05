@@ -30,8 +30,8 @@ hr {
   width: 100%;
 }
 
-.wrap {
-    width: 40%;
+main {
+    max-width: 768px;
     margin: auto;
 }
 .signup {
@@ -103,6 +103,16 @@ button {
   margin-right: 40px;
 }
 
+.contact label,
+.contact input,
+.contact select {
+  width: 100%;
+  flex-basis: 100%;
+}
+#zip {
+  width: 50%;
+}
+
 label {
   display: inline-flex;
 }
@@ -141,10 +151,23 @@ footer {
 /*--- Media ---*/
 
 @media(min-width: 768px) {
-  header {
+  .contact {
+    display: flex;
   }
-
-  .warp {
-    width: 90%;
+  .contact label,
+  .contact input,
+  .contact select {
+    width: unset;
+  }
+  .contact label {
+    flex-basis: 25%;
+  }
+  .contact input,
+  .contact select {
+    flex-basis: 65%;
+    flex-grow: 1;
+  }
+  #zip {
+    max-width: 25%;
   }
 }
