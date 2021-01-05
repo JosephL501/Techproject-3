@@ -53,8 +53,6 @@ legend {
   color: black;
 }
 
-.nlp {
-}
 
 button {
   width: 100%;
@@ -138,4 +136,15 @@ label {
 footer {
   text-align: center;
   color: #DCDCDC;
+}
+
+/*--- Media ---*/
+
+@media(min-width: 768px) {
+  header {
+  }
+
+  .warp {
+    width: 90%;
+  }
 }
