@@ -65,6 +65,10 @@ button {
   border-color: #00CED1;
 }
 
+fieldset {
+  border-style: hidden;
+}
+
 /* --- Form Fields --- */
 .inputfields {
   font-size: 1em;
@@ -78,6 +82,11 @@ button {
   margin-bottom: 1.2em;
   border-radius: .3em;
   background-color: #e8eeef;
+}
+
+input:focus,
+textarea:focus {
+  background-color: lightblue;
 }
 
 .zipfields {

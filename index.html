@@ -20,27 +20,26 @@
     <div class="wrap">
       <h2 class="signup">Signup for our newsletter</h2>
       <p class="pcolor">Get the latest news on how your code is doing right in your inbox</p>
-    <div/>
+    </div>
 
     <hr class="hr1" />
     <hr />
 
-
+    <fieldset>
       <legend>Contact Information</legend>
-
     <div class="contact container">
         <label for="name" class="title clear">Full Name</label>
         <input class="inputfields" type="text" id="name" name="user_name" placeholder="Required"><br>
         <label for="mail" class="title clear">Email Address</label>
         <input class="inputfields" type="email" id="mail" name="user_email" placeholder="Required"><br>
         <label for="phone" class="title clear">Phone Number</label>
-        <input class="inputfields" type="phone" id="phone" name="user_phone"><br>
+        <input class="inputfields" type="tele" id="phone" name="user_phone"><br>
         <label for="street" class="title clear">Street Address</label>
         <input class="inputfields" type="street" id="street" name="user_street"><br>
         <label for="city" class="title clear">City</label>
         <input class="inputfields" type="city" id="city" name="user_city"><br>
         <label for="state" class="title clear">State</label>
-        <select class="inputfields" type="state" id="state"> <option value="" selected="selected">Choose a State</option>
+        <select class="inputfields" id="state"> <option value="" selected="selected">Choose a State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -96,7 +95,9 @@
         <label for="zip" class="title clear">Zip Code</label>
         <input class="zipfields" type="zip" id="zip" name="user_zip">
       </div>
+      </fieldset>
         <hr />
+        <fieldset>
       <div class="container">
         <legend>Newsletter</legend>
 
@@ -112,12 +113,13 @@
         <input class="checkbox clear" type="radio" id="htmlf" value="htmlf" name="format">
         <label class="newslcb" for="htmlf">HTML</label><br>
         <input class="checkbox clear" type="radio" id="plainf" value="plainf" name="format">
-        <label class="newslcb" for="plainf">Plain text</label>
+        <label class="newslcb" for="topics">Plain text</label>
 
         <p class="nlp">Other topics you'd like to hear about</p>
         <textarea class="topics" id="topics" name="user_topics"></textarea>
 
     </div>
+    </fieldset>
       <button type="submit">Sign Up</button>
 
   </form>
