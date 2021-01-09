@@ -39,7 +39,7 @@
         <label for="city" class="title clear">City</label>
         <input class="inputfields" type="city" id="city" name="user_city"><br>
         <label for="state" class="title clear">State</label>
-        <select class="inputfields" id="state"> <option value="" selected="selected">Choose a State</option>
+        <select class="inputfields" id="state" name="user_state"> <option value="" selected="selected">Choose a State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -98,8 +98,8 @@
       </fieldset>
         <hr />
         <fieldset>
-      <div class="container">
         <legend>Newsletter</legend>
+          <div class="container">
 
         <p class="nlp">Select the newsletter you would like to recieve</p>
         <input class="checkbox clear" type="checkbox" id="htmln" name="news-letter">
@@ -113,9 +113,9 @@
         <input class="checkbox clear" type="radio" id="htmlf" value="htmlf" name="format">
         <label class="newslcb" for="htmlf">HTML</label><br>
         <input class="checkbox clear" type="radio" id="plainf" value="plainf" name="format">
-        <label class="newslcb" for="topics">Plain text</label>
+        <label class="newslcb" for="topics">Plain text</label><br><br>
 
-        <p class="nlp">Other topics you'd like to hear about</p>
+        <label class="nlp">Other topics you'd like to hear about</label>
         <textarea class="topics" id="topics" name="user_topics"></textarea>
 
     </div>
